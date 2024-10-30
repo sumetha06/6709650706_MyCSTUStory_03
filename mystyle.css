@@ -1,0 +1,110 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    background-image: url(resources/background.avif) ;
+background-size: cover;   
+background-attachment: fixed;
+background-position: center;
+}
+    
+.content {
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header,.card {
+    width: 50%;
+    position: relative;
+}
+.content .header {
+    color: aliceblue;
+}
+.content .header h3{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+}
+.content .header h1{
+    font-size: 6rem;
+}
+.content .header h4{
+    font-size: 2.5rem;
+}
+.card{
+    display: grid;
+    color: brown;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.card .box {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.4s;
+
+}
+.B1{
+    background-image:url(resources/IMG_1004.jpeg);
+}
+.content .header p {
+    font-size:  1.5rem;
+}
+.B2 {
+    background-image: url(resources/myfuture.jpg);
+}
+.B3 {
+    background-image:url(resources/MYJOURNEY.jpg) ;
+}
+
+.content .box h2{
+    position: absolute;
+    bottom:7px;
+    left: 15px;
+    color: floralwhite;
+}
+.content .box:hover{
+    transform: translateY(15px);
+}
+.B4{
+background-image: url(resources/me.jpg);
+}
+@media (max-width: 800px) {
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .content .header, .card {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .content .header {
+        color: rgb(0, 0, 0);
+    }
+
+    .content .header h3 {
+        font-size: 2.5rem; /* ลดขนาดลงเพื่อให้ดูพอดี */
+        letter-spacing: 1px; /* ลดช่องว่างระหว่างตัวอักษร */
+    }
+
+    .content .header h1 {
+        font-size: 3rem; /* ลดขนาดลงเล็กน้อย */
+    } 
+}
